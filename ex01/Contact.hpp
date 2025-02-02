@@ -1,44 +1,30 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   Contact.hpp                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: haalouan <haalouan@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/12 10:23:13 by haalouan          #+#    #+#             */
-/*   Updated: 2024/08/12 11:58:18 by haalouan         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #ifndef CONTACT_HPP
 #define CONTACT_HPP
+#include <iostream>
 
-#include "PhoneBook.hpp"
-#include "MyAwesome.hpp"
+class Contact{
 
-class Contact {
-	
-	public:
-		// Contact();
-		
-		void setFirstName(std::string firstname);
-		void setLastName(std::string lastname);
-		void setNickName(std::string nickname);
-		void setPhoneNumber(std::string phonenumber);
-		void setDarketSecret(std::string darketsecret);
+    private:
+        std::string firstName;
+        std::string lastName;
+        std::string nickName;
+        std::string phoneNumber;
+        std::string darkestSecret;
+    public: 
+        Contact(){} 
+        std::string getFirstName() const;
+        std::string getLastName() const;
+        std::string getNickName() const;
+        std::string getPhoneNumber() const;
+        std::string getDarkestSecret() const;
 
-		std::string getFirstName() const;
-		std::string getLastName() const;
-		std::string getNickName() const;
-		std::string getPhoneNumber() const;
-		std::string getDarketSecret() const;
-		
-	private:
-		std::string firstname;
-		std::string lastname;
-		std::string nickname;
-		std::string phonenumber;
-		std::string darketsecret;
+        void setFirstName(std::string firstName);
+        void setLastName(std::string lastName);
+        void setNickName(std::string nickName);
+        void setPhoneNumber(std::string phoneNumber);
+        void setDarkestSecret(std::string darkestSecret);
+    
+    
 };
 
 #endif

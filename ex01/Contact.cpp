@@ -10,44 +10,44 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "MyAwesome.hpp"
+#include "Contact.hpp"
 
-void Contact::setFirstName(std::string firstname){
-    this->firstname = firstname;
+void Contact::setFirstName(std::string firstName){
+    this->firstName = firstName;
 }
 
-void Contact::setLastName(std::string lastname){
-    this->lastname = lastname;
+void Contact::setLastName(std::string lastName){
+    this->lastName = lastName;
 }
 
-void Contact::setNickName(std::string nickname){
-    this->nickname = nickname;
+void Contact::setNickName(std::string nickName){
+    this->nickName = nickName;
 }
 
-void Contact::setPhoneNumber(std::string phonenumber){
-    this->phonenumber = phonenumber;
+void Contact::setPhoneNumber(std::string phoneNumber){
+    this->phoneNumber = phoneNumber;
 }
 
-void Contact::setDarketSecret(std::string darketsecret){
-    this->darketsecret = darketsecret;
+void Contact::setDarkestSecret(std::string darkestSecret){
+    this->darkestSecret = darkestSecret;
 }
 
 std::string Contact::getFirstName() const{
-    return this->firstname;
+    return this->firstName;
 }
 
 std::string Contact::getLastName() const{
-    return this->lastname;
+    return this->lastName;
 }
 
 std::string Contact::getNickName() const{
-    return this->nickname;
+    return this->nickName;
 }
 
 std::string Contact::getPhoneNumber() const{
-    return this->phonenumber;
+    return this->phoneNumber;
 }
 
-std::string Contact::getDarketSecret() const{
-    return this->darketsecret;
+std::string Contact::getDarkestSecret() const{
+    return this->darkestSecret;
 }

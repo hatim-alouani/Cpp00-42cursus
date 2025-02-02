@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "MyAwesome.hpp"
+#include "PhoneBook.hpp"
+#include <iostream>
 
 int main() {
     PhoneBook phonebook;
@@ -21,7 +22,8 @@ int main() {
     while (1)
     {
         std::cout << "Enter ADD , SEARCH or EXIT : ";
-        std::getline(std::cin, result);
+        if (!std::getline(std::cin, result))
+            exit(0);
         if (!result.compare("ADD")){
             phonebook.AddContact();
         }
@@ -31,6 +33,9 @@ int main() {
         else if (!result.compare("EXIT")){
             std::cout << "Goodbye\n";
             break ;
+        }
+        else {
+            std::cout << "Invalid command\n";
         }
     }
 
